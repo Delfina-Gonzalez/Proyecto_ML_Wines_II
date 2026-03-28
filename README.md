@@ -1,10 +1,5 @@
 🍷 Wine Recognition - Clustering & PCA
 
-
-
-
-
-
 📌 Introducción
 Modelo en base al dataset 🍷 Wine de Scikit-learn
 
@@ -17,21 +12,29 @@ Antes de aplicar PCA, las variables se normalizan utilizando StandardScaler, con
 Finalmente, los resultados se evalúan mediante el Adjusted Rand Index (ARI), métrica que mide el grado de coincidencia entre los clusters generados y las clases reales del dataset.
 
 ⚙️ Tech Stack
+
+
 Python
 Pandas
 NumPy
 Scikit-learn
 Matplotlib
+
+
 📊 Resultados
-Tabla resumen de métodos y desempeño
-Método	Objetivo	Parámetros utilizados	Resultado (ARI)	Observación
-PCA	Reducción de dimensionalidad	n_components = 2	—	Permite visualizar los datos en 2 dimensiones
-KMeans	Clustering no supervisado	K = 2	0.3245	Bajo ajuste a las clases reales
-KMeans	Clustering no supervisado	K = 3	0.9344	Coincidencia óptima con las 3 clases reales
-KMeans	Clustering no supervisado	K = 4	0.6896	Genera más clusters de los necesarios
-KMeans	Clustering no supervisado	K = 5	0.6096	Sobresegmentación de los datos
-Affinity Propagation (Base)	Clustering automático	Parámetros por defecto	0.5282	Detecta demasiados clusters (7)
-Affinity Propagation (Optimizado)	Clustering automático	pref = -100, damp = 0.90	0.9343	Excelente desempeño tras optimización
+
+### Tabla resumen de métodos y desempeño
+
+| Método | Objetivo | Parámetros utilizados | Resultado (ARI) | Observación |
+|--------|----------|----------------------|----------------|------------|
+| PCA | Reducción de dimensionalidad | n_components = 2 | — | Permite visualizar los datos en 2 dimensiones |
+| KMeans | Clustering no supervisado | K = 2 | 0.3245 | Bajo ajuste a las clases reales |
+| KMeans | Clustering no supervisado | K = 3 | **0.9344** | Coincidencia óptima con las 3 clases reales |
+| KMeans | Clustering no supervisado | K = 4 | 0.6896 | Genera más clusters de los necesarios |
+| KMeans | Clustering no supervisado | K = 5 | 0.6096 | Sobresegmentación de los datos |
+| Affinity Propagation (Base) | Clustering automático | Parámetros por defecto | 0.5282 | Detecta demasiados clusters (7) |
+| Affinity Propagation (Optimizado) | Clustering automático | pref = -100, damp = 0.90 | **0.9343** | Excelente desempeño tras optimización |
+
 📈 Análisis de resultados
 
 A partir de los resultados obtenidos, se observa que el desempeño de los algoritmos de clustering es altamente sensible tanto a la elección de hiperparámetros como a la partición de los datos.
@@ -66,10 +69,11 @@ git clone https://github.com/tu-usuario/tu-repo.git
 cd tu-repo
 pip install numpy pandas matplotlib scikit-learn
 jupyter notebook
+
 📁 Estructura
 .
 ├── TPF_Gonzalez_Ejer1.ipynb
 └── README.md
-👤 Autor
 
-Delfina González
+
+👤 Autor Delfina González

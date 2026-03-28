@@ -1,6 +1,6 @@
-🍷 Wine Recognition - Clustering & PCA
+## 🍷 Wine Recognition - Clustering & PCA
 
-📌 Introducción
+### 📌 Introducción
 Modelo en base al dataset 🍷 Wine de Scikit-learn
 
 En este proyecto se analiza el dataset Wine utilizando técnicas de aprendizaje no supervisado. El objetivo es explorar la estructura de los datos y evaluar la capacidad de distintos algoritmos para identificar agrupamientos dentro del conjunto de observaciones.
@@ -11,7 +11,7 @@ Antes de aplicar PCA, las variables se normalizan utilizando StandardScaler, con
 
 Finalmente, los resultados se evalúan mediante el Adjusted Rand Index (ARI), métrica que mide el grado de coincidencia entre los clusters generados y las clases reales del dataset.
 
-⚙️ Tech Stack
+### ⚙️ Tech Stack
 
 
 Python
@@ -21,7 +21,7 @@ Scikit-learn
 Matplotlib
 
 
-📊 Resultados
+### 📊 Resultados
 
 ### Tabla resumen de métodos y desempeño
 
@@ -35,7 +35,7 @@ Matplotlib
 | Affinity Propagation (Base) | Clustering automático | Parámetros por defecto | 0.5282 | Detecta demasiados clusters (7) |
 | Affinity Propagation (Optimizado) | Clustering automático | pref = -100, damp = 0.90 | **0.9343** | Excelente desempeño tras optimización |
 
-📈 Análisis de resultados
+### 📈 Análisis de resultados
 
 A partir de los resultados obtenidos, se observa que el desempeño de los algoritmos de clustering es altamente sensible tanto a la elección de hiperparámetros como a la partición de los datos.
 
@@ -45,7 +45,7 @@ En el caso de KMeans, se confirma que K = 3 es el único valor que captura corre
 
 Por otro lado, Affinity Propagation con parámetros por defecto presenta resultados deficientes (ARI ≈ 0.53) debido a la generación excesiva de clusters. Sin embargo, tras la optimización de hiperparámetros (ajuste de preference y damping), el modelo logra un desempeño equivalente a KMeans, alcanzando un ARI de 0.934.
 
-📌 Conclusión
+### 📌 Conclusión
 
 En este proyecto se aplicaron técnicas de reducción de dimensionalidad y clustering no supervisado sobre el dataset Wine.
 
@@ -64,16 +64,17 @@ Ajuste de hiperparámetros
 
 constituye una metodología robusta para el análisis de este tipo de datasets.
 
-▶️ Run Locally
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
-pip install numpy pandas matplotlib scikit-learn
-jupyter notebook
+### ▶️ Run Locally
+git clone https://github.com/Delfina-Gonzalez/Proyecto_ML_Wines_II
+cd Proyecto_ML_Wines_II
+pip install numpy pandas matplotlib scikit-learn jupyter notebook
 
-📁 Estructura
+### 📁 Estructura
 .
-├── TPF_Gonzalez_Ejer1.ipynb
+├── Proy_WinesII.ipynb
 └── README.md
 
 
 👤 Autor Delfina González
+
+28/3/2026
